@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/Users/hamoonzamiri/Desktop/flask_todo_list/env/bin/python3.9"
+    "python.pythonPath": "/Users/hamoonzamiri/Desktop/flask_todo_list/env/bin/python3.9",
+    "python.linting.pylintArgs": ["--load-plugins", "pylint_flask_sqlalchemy", "pylint_flask", "--disable=C0111"],
 }

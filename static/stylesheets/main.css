@@ -1,4 +1,28 @@
-body {
-    margin: 50px;
-    font-family: sans-serif;
+table, td, th {
+    border: solid 1px;
 }
+
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: lightblue;
+}
+
+.content{
+    margin: 0 auto;
+    width: 400px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 20px;
+}
+
+form {
+    margin-top: 40px;
+}
+
