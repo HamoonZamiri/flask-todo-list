@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <Title>My First Flask App</Title>
-    </head>
-    <body>
+{% extends 'base.html' %}
 
-        <h1>Flask App</h1>
+{% block head %}
+    <Title>My First Flask App</Title>
+{% endblock %}
 
-    </body>
-</html>
+{% block body %}
+    <h1>Welcome to my First Flask App</h1>
+{% endblock %}
