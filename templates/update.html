@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <Title>Update</Title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css')}}">
+{% endblock %}
+
+{% block body %}
+<!-- <h1>Welcome to my First Flask App</h1> -->
+<div class="content">
+    <h1 style="text-align: center;">Update Task</h1>
+
+
+    <form action="/update/{{task.id}}" method="POST">
+        <input type="text" name="content" id="content" value="{{task.content}}"/>
+        <input type="submit" value="Update Task">
+    </form>
+
+</div>
+{% endblock %}
