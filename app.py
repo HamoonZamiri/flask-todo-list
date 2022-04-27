@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 db = SQLAlchemy(app)
 
@@ -52,7 +52,7 @@ def update(id):
             db.session.commit()
         except:
             return 'db error'
-        
+
         return redirect('/')
     else:
         return render_template('update.html', task=task_to_update)

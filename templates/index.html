@@ -28,10 +28,22 @@
         {% endfor %}
     </table>
 
-    <form action="/" method="POST">
+    <form class="add_task_button" action="/" method="POST">
         <input type="text" name="content" id="content" required>
         <input type="submit" value="Add Task">
     </form>
+
+    <div class="socials">
+        <a href="https://www.instagram.com/hamoon.__/?hl=en">
+            <img src="/static/images/instagram_icon.png" alt="instagram logo">
+        </a>
+        <a href="www.linkedin.com/in/hamoon-zamiri">
+            <img src="/static/images/linkedin_logo.jpeg" alt="LinkedIn Logo">
+        </a>
+        <a href="https://github.com/HamoonZamiri">
+            <img src="/static/images/github_logo.png" alt="LinkedIn Logo">
+        </a>
+    </div>
 
 </div>
 {% endblock %}
